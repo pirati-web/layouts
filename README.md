@@ -1,6 +1,6 @@
 # layouts
 Layouts pro piratske weby.
-Pomoci GIT submodulu jsou sdileny.
+Pomoci GIT submodulu jsou sdileny (slozka _layouts v jednotlivych jekyll sites)
 
 ## contribution
 
