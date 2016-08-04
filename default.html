@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cz">
+<html lang="cs">
   {% include head.html %}
 
 <body>
@@ -7,7 +7,7 @@
   <header id="header" class="contain-to-grid">
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
-        <li class="name"></li>
+        <li class="name"><h1><a href="/">{{ site.title }}</a></h1></li>
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
       </ul>
 
@@ -18,15 +18,6 @@
       </section>
     </nav>
   </header>
-
-  <div class="middle-bar">
-    <div class="row">
-      <div class="small-12 columns">
-        <h1 class="left">{{ site.title }}</h1>
-        <img id="logo" src="/static/logo.png" alt="logo" />
-      </div>
-    </div>
-  </div>
 
   <div class="row">
     <section role="main">
