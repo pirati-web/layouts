@@ -9,12 +9,14 @@ section: blog
   <h1>{{ page.title }}</h1>
 
   <h6>
-    {% if page.autor %}<autor class="radius label">{{ page.autor }}</autor> | {% endif %}
-    <i class="fi-clock"></i> <time datetime="{{post.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time>
+    {% if page.author %}
+    <autor class="radius label"><i class="fi-torso"></i> {{ page.author }}</autor> |
+    {% endif %}
+    <i class="fi-calendar"></i> <time datetime="{{post.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time>
   </h6>
 
-  {% if page.splash %}
-  <img src='{{page.splash}}' alt='splash image' class="img-responsive splash" />
+  {% if page.image %}
+  <img src='{{page.image}}' alt='splash image' class="img-responsive splash" />
   {% endif %}
 
   {{content}}
