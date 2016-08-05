@@ -10,7 +10,7 @@ section: blog
 
   <h6>
     {% if page.autor %}<autor class="radius label">{{ page.autor }}</autor> | {% endif %}
-    <i class="fa fa-clock-o"></i> <time datetime="{{post.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time>
+    <i class="fi-clock"></i> <time datetime="{{post.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time>
   </h6>
 
   {% if page.splash %}
@@ -19,18 +19,18 @@ section: blog
 
   {{content}}
 
-  <span class="category"><i class="fa fa-tags"></i> {{ page.tags | category_links }}</span>
+  <span class="category"><i class="fi-pricetag-multiple"></i> {{ page.tags | category_links }}</span>
 
   <hr>
 
   {% if page.previous %}
     <a rel="prev" class="left button round" href="{{ page.previous.url }}">
-      <i class="fa fa-arrow-left"></i> Předchozí článek
+      <i class="fi-arrow-left"></i> Předchozí článek
     </a>
   {% endif %}
   {% if page.next %}
     <a rel="next" class="right button round" href="{{ page.next.url }}">
-      Další článek <i class="fa fa-arrow-right"></i>
+      Další článek <i class="fi-arrow-right"></i>
     </a>
   {% endif %}
 
