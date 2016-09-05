@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="cs">
-  {% include shared/head.html %}
+
+   {% include shared/head.html %}
 
   <body>
-
     {% include shared/header.html %}
 
-    <div class="row">
-      <section role="main">
-        {{ content }}
-      </section>
-    </div>
+    {{ content }}
 
-    {% include footer.html %}
+    <section role="footer">
+      {% include footer.html %}
+    </section>
     {% include scripts.html %}
   </body>
 
