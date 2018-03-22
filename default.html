@@ -8,9 +8,13 @@
 
     {{ content }}
 
-    <section role="footer">
-      {% include footer.html %}
-    </section>
+    <div id="footer" class="bg-dark">
+      <section role="footer">
+        <footer class="site-footer container footer" role="contentinfo">
+        {% include footer.html %}
+        </footer>
+      </section>
+    </div>
     {% include scripts.html %}
   </body>
 
