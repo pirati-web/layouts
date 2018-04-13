@@ -2,6 +2,11 @@
 layout: default
 ---
 
+{% if page.splash %}
+<div style='background-image: url("{{page.splash}}");' class="pagesplash">
+</div>
+{% endif %}
+
 <div class="container">
   <div class="row">
     <div class="col-sm-12 {{ page.style }}">
